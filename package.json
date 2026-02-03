@@ -1,0 +1,53 @@
+{
+  "name": "@tap-co/cli",
+  "version": "0.2.0",
+  "description": "Tap CLI - Plan campaigns, search inventory, and generate creatives from your terminal",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "bin": {
+    "tap": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "tap",
+    "advertising",
+    "cli",
+    "campaign",
+    "media"
+  ],
+  "author": "Tap.co",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tap-co/tap.git"
+  },
+  "homepage": "https://docs.tap.co/cli",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "conf": "^13.0.1",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "inquirer": "^9.2.23",
+    "cli-table3": "^0.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/inquirer": "^9.0.7",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  }
+}
